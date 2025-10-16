@@ -11,16 +11,15 @@
             box-sizing: border-box;
         }
 
-     :root {
-    --primary: #1A365D;        /* Deep navy blue → trust, stability */
-    --primary-dark: #0D2542;   /* Even darker navy for buttons/hover */
-    --text: #1E1E1E;           /* Rich charcoal → modern, strong readability */
-    --text-light: #707070;     /* Professional gray for secondary text */
-    --bg: #FFFFFF;             /* Clean white → clarity and simplicity */
-    --bg-secondary: #F4F6F8;   /* Soft neutral background sections */
-    --border: #D6D9DE;         /* Refined light gray borders */
-    --accent: #BFA14A;         /* Elegant muted gold → premium highlights */
-}
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --bg-secondary: #f9fafb;
+            --border: #e5e7eb;
+        }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -58,12 +57,7 @@
             font-weight: 700;
             color: var(--primary);
         }
-        img{
-            height:200px;
-            width:450px;
-        
-            
-        }
+
         .nav-links {
             display: flex;
             gap: 2rem;
@@ -496,7 +490,7 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image"><img src="img/skillence.png"></div>
+                    <div class="project-image">🚀</div>
                     <div class="project-content">
                         <h3>Proffessional social Platform</h3>
                         <p>Fullfeatured proffesional social platform offering proffessial access to tools like cv analyzer, ai resume builder,latest job post.</p>
@@ -507,44 +501,44 @@
                             <span class="tech-tag">SUPABASE</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://skillence.top">Live Demo →</a>
-                            <a href="https://github.com/michael2004-svg/Skillence">GitHub →</a>
+                            <a href="skillence.top">Live Demo →</a>
+                            <a href="#">GitHub →</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image"><img src="img/kinginsano.png"></div>
+                    <div class="project-image">📊</div>
                     <div class="project-content">
-                        <h3>Proffesional beat selling website. This one i bult for a client</h3>
+                        <h3>Proffesional beat selling website. This one i byul for a xlient</h3>
                         <p>Interactive dashboard for visualizing complex datasets with real-time updates and custom filters.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Html</span>
-                            <span class="tech-tag">Css</span>
-                            <span class="tech-tag">Javascript</span>
-                     
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PostgreSQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://kinginsanobeats.top">Live Demo →</a>
-                            <a href="https://github.com/michael2004-svg/Kinginsanobeats">GitHub →</a>
+                            <a href="#">Live Demo →</a>
+                            <a href="#">GitHub →</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image"><img src="img/sot.png"></div>
+                    <div class="project-image">💬</div>
                     <div class="project-content">
-                        <h3>Proffesional trading website</h3>
-                        <p>This is a proffesional forex trading website i build for one of my clients.</p>
+                        <h3>Real-Time Chat Application</h3>
+                        <p>Scalable chat app with WebSocket connections, message encryption, and file sharing capabilities.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Html</span>
-                            <span class="tech-tag">Css</span>
-                            <span class="tech-tag">Javascript</span>
-                        
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Redis</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://sot2.netlify.app">Live Demo →</a>
-                       
+                            <a href="#">Live Demo →</a>
+                            <a href="#">GitHub →</a>
                         </div>
                     </div>
                 </div>
@@ -552,7 +546,7 @@
                 <div class="project-card">
                     <div class="project-image">🔐</div>
                     <div class="project-content">
-                        <h3>Email and name  extraxctor from a screenshot using ocr</h3>
+                        <h3>Authentication Microservice</h3>
                         <p>Secure JWT-based authentication service with OAuth integration and role-based access control.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Node.js</span>
@@ -561,7 +555,8 @@
                             <span class="tech-tag">AWS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https:/emailextractorfromimage.netlify.app">Live Demo →</a>
+                            <a href="#">Live Demo →</a>
+                            <a href="#">GitHub →</a>
                         </div>
                     </div>
                 </div>
@@ -634,35 +629,24 @@
         </div>
     </section>
    <section id="contact">
-  <div class="container">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-content">
-      <!-- Formspree integration -->
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/xkgqkkkj"
-        method="POST"
-      >
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm" action="mailto:officialmichaelmusyoka.com@gmail.com" method="POST" enctype="text/plain">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
     </div>
-  </div>
-</section>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
                 <div class="social-links">
                     <a href="#" title="GitHub">⚙️</a>
                     <a href="#" title="LinkedIn">💼</a>
@@ -742,61 +726,6 @@
                 header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
             }
         });
-
-    const form = document.querySelector(".contact-form");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const formData = new FormData(form);
-  const response = await fetch(form.action, {
-    method: form.method,
-    body: formData,
-    headers: { Accept: "application/json" },
-  });
-
-  if (response.ok) {
-    showToast("✅ Message sent successfully!");
-    form.reset();
-  } else {
-    showToast("⚠️ Something went wrong. Please try again.", true);
-  }
-});
-
-// Toast function
-function showToast(message, isError = false) {
-  // Create the toast
-  const toast = document.createElement("div");
-  toast.textContent = message;
-  toast.style.position = "fixed";
-  toast.style.bottom = "30px";
-  toast.style.right = "30px";
-  toast.style.background = isError ? "#D9534F" : "var(--primary)";
-  toast.style.color = "white";
-  toast.style.padding = "14px 22px";
-  toast.style.borderRadius = "12px";
-  toast.style.boxShadow = "0 4px 12px rgba(0,0,0,0.2)";
-  toast.style.fontWeight = "600";
-  toast.style.zIndex = "9999";
-  toast.style.opacity = "0";
-  toast.style.transition = "opacity 0.4s ease, transform 0.4s ease";
-  toast.style.transform = "translateY(20px)";
-
-  document.body.appendChild(toast);
-
-  // Animate in
-  setTimeout(() => {
-    toast.style.opacity = "1";
-    toast.style.transform = "translateY(0)";
-  }, 100);
-
-  // Remove after 3 seconds
-  setTimeout(() => {
-    toast.style.opacity = "0";
-    toast.style.transform = "translateY(20px)";
-    setTimeout(() => toast.remove(), 400);
-  }, 3000);
-}
     </script>
 </body>
 </html>
