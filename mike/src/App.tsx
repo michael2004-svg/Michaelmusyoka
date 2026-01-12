@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef, Suspense } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail, ExternalLink, ChevronDown, Moon, Sun, Code, Briefcase, GraduationCap, Award, ArrowRight, Terminal, Zap, Shield, Sparkles } from 'lucide-react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial, Float, Stars, Text3D, Center } from '@react-three/drei';
+import { OrbitControls, Sphere, MeshDistortMaterial, Float, Stars, } from '@react-three/drei';
 import { useInView } from 'react-intersection-observer';
 import * as THREE from 'three';
-import { useMemo } from 'react';
+import type { Variants } from "framer-motion";
+
 
 // Types
 interface Project {
@@ -79,12 +80,11 @@ const ParticleField = () => {
   return (
     <points ref={pointsRef}>
       <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          count={particlesCount}
-          array={positions}
-          itemSize={3}
-        />
+       <bufferAttribute
+  attach="attributes-position"
+  args={[positions, 3]}
+/>
+
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
@@ -259,15 +259,17 @@ const experience = [
 ];
 
 // Enhanced Animation Variants
-const fadeInUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { 
-    opacity: 1, 
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.6, -0.05, 0.01, 0.99] }
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
   }
 };
-
 const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
@@ -279,14 +281,6 @@ const staggerContainer = {
   }
 };
 
-const scaleIn = {
-  hidden: { scale: 0, opacity: 0 },
-  visible: { 
-    scale: 1, 
-    opacity: 1,
-    transition: { type: "spring", stiffness: 100, damping: 15 }
-  }
-};
 
 // Components
 const Navigation = ({ theme, toggleTheme }: { theme: string; toggleTheme: () => void }) => {
